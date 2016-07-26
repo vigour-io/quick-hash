@@ -1,0 +1,42 @@
+{
+  "name": "quick-hash",
+  "version": "1.0.0",
+  "description": "Murmur hash optimized for performance, not collision avoidance.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test | tap-difflet && vtest test | tap-difflet && standard",
+    "cover": "istanbul cover --report none --print detail test/index.js",
+    "view-cover": "istanbul report html && open ./coverage/index.html",
+    "watch": "nodemon test | tap-difflet",
+    "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/quick-hash.git"
+  },
+  "keywords": [
+    "hash",
+    "murmur",
+    "murmur hash",
+    "fast",
+    "performance",
+    "quick"
+  ],
+  "author": "Vigour.io <dev@vigour.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/quick-hash/issues"
+  },
+  "homepage": "https://github.com/vigour-io/quick-hash#readme",
+  "contributors": [
+    "Jim De Beer <jim@vigour.io>",
+    "Shawn Inder <shawn@vigour.io>"
+  ],
+  "dependencies": {},
+  "engines": {},
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0"
+  }
+}
