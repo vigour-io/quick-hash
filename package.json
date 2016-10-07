@@ -1,6 +1,6 @@
 {
   "name": "quick-hash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Murmur hash optimized for performance, not collision avoidance.",
   "main": "lib/index.js",
   "scripts": {
