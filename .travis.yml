@@ -11,7 +11,7 @@ node_js:
 notifications:
   email: false
 script: npm run travis
-deploy
+deploy:
   - provider: npm
     email: jim@vigour.io
     api_key: ${NPM_TOKEN}
