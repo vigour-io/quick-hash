@@ -21,6 +21,6 @@ Murmur hash optimized for performance, not collision avoidance.
 <!-- VDOC END -->
 
 ```javascript
-var hash = require('vigour-util/hash')
-hash('Any sting in the world!!!') // '16hck72'
+var hash = require('vigour-util/hash');
+hash('Any string in the world!'); // '16hck72'
 ```
